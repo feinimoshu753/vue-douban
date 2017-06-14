@@ -4,14 +4,19 @@ import Vue from 'vue'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
-import Home from './components/HelloFromVux'
+import Movie from './components/Movie'
+import Fiction from './components/Fiction'
+import Tv from './components/Tv'
+import Music from './components/Music'
 
 Vue.use(VueRouter)
 
-const routes = [{
-  path: '/',
-  component: Home
-}]
+const routes = [
+  {path: '/', component: Movie},
+  {path: '/fiction', component: Fiction},
+  {path: '/tv', component: Tv},
+  {path: '/music', component: Music}
+]
 
 const router = new VueRouter({
   routes

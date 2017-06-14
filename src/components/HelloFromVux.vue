@@ -1,11 +1,12 @@
 <template>
   <div>
     <div class="vux-demo">
-      <img class="logo" src="../assets/vux_logo.png">
+      <img class="logo" src="../assets/img/vux_logo.png">
       <h1> </h1>
     </div>
     <group title="cell demo">
       <cell title="Vux" value="Cool" is-link></cell>
+      <router-link to="/hello">Go to hello</router-link>
     </group>
   </div>
 </template>
