@@ -8,8 +8,10 @@ import Movie from './components/Movie'
 import Fiction from './components/Fiction'
 import Tv from './components/Tv'
 import Music from './components/Music'
+import { AjaxPlugin } from 'vux'
 
 Vue.use(VueRouter)
+Vue.use(AjaxPlugin)
 
 const routes = [
   {path: '/', component: Movie},
