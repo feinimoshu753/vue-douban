@@ -7,25 +7,12 @@
     <div class="movie-content">
         图书
     </div>
-    <tabbar>
-      <tabbar-item link="/">
-        <span slot="label">电影</span>
-      </tabbar-item>
-      <tabbar-item :selected="true">
-        <span slot="label">图书</span>
-      </tabbar-item>
-      <tabbar-item link="/tv">
-        <span slot="label">电视剧</span>
-      </tabbar-item>
-      <tabbar-item link="/music">
-        <span slot="label">音乐</span>
-      </tabbar-item>
-    </tabbar>
+    <tabbar-template :index="1"></tabbar-template>
   </div>
 </template>
 
 <script>
-  import { Tabbar, TabbarItem } from 'vux'
+  import TabbarTemplate from './TabbarTemplate.vue'
 
   export default {
     data () {
@@ -34,8 +21,7 @@
       }
     },
     components: {
-      Tabbar,
-      TabbarItem
+      TabbarTemplate
     }
   }
 </script>
