@@ -1,5 +1,7 @@
 <style>
-
+  .weui-tabbar {
+    position: fixed;
+  }
 </style>
 
 <template>

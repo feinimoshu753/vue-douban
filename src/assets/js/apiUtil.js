@@ -4,7 +4,9 @@ let apiUtil = {}
 apiUtil.version = '1.0.0'
 
 apiUtil.urls = {
-  movieShowing: _baseUrl + '/movie/showing'
+  movieShowing: _baseUrl + '/movie/showing',
+  movieFree: _baseUrl + '/movie/free',
+  movieLatest: _baseUrl + '/movie/latest'
 }
 
 apiUtil.getURLParam = function (link, name) {
