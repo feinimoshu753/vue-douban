@@ -23,6 +23,7 @@
   }
 
   .horizontal-scroll-template .scroll-item{
+    width: 100px;
     display: inline-block;
     margin-right: 10px;
     vertical-align: top;

@@ -1,6 +1,6 @@
 <style>
   .weui-tabbar {
-    position: fixed;
+    position: fixed !important;
   }
 </style>
 

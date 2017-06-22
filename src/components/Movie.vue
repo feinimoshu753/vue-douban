@@ -2,6 +2,10 @@
   .movie-content {
     padding-bottom: 50px;
   }
+  .classification-title{
+    padding: 10px;
+    background-color: #fff;
+  }
 </style>
 
 <template>
@@ -16,6 +20,8 @@
       <horizontal-scroll-template :header-title="movieLatestData && movieLatestData.subject_collection.name"
                                   more-link="/music/list?type=latest"
                                   :datas="movieLatestData.subject_collection_items"></horizontal-scroll-template>
+
+      <h2 class="classification-title">分类浏览</h2>
       <classification-template :datas="movieClassificationData"></classification-template>
     </div>
 
@@ -37,7 +43,22 @@
         movieLatestData: '',
         movieClassificationData: [
           {name: '经典', link: '/movie/list?type=classic'},
-          {name: '冷门佳片', link: '/movie/list?type=underrated'}
+          {name: '冷门佳片', link: '/movie/list?type=underrated'},
+          {name: '豆瓣高分', link: '/movie/list?type=doubantop'},
+          {name: '动作', link: '/movie/list?type=action'},
+          {name: '喜剧', link: '/movie/list?type=comedy'},
+          {name: '爱情', link: '/movie/list?type=love'},
+          {name: '悬疑', link: '/movie/list?type=mystery'},
+          {name: '恐怖', link: '/movie/list?type=horror'},
+          {name: '科幻', link: '/movie/list?type=scifi'},
+          {name: '治愈', link: '/movie/list?type=sweet'},
+          {name: '文艺', link: '/movie/list?type=artfilm'},
+          {name: '成长', link: '/movie/list?type=youth'},
+          {name: '动画', link: '/movie/list?type=animation'},
+          {name: '华语', link: '/movie/list?type=chinese'},
+          {name: '欧美', link: '/movie/list?type=western'},
+          {name: '韩国', link: '/movie/list?type=korean'},
+          {name: '日本', link: '/movie/list?type=japanese'}
         ]
       }
     },

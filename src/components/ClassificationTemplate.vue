@@ -2,16 +2,18 @@
   .classification-template-container .classification-item {
     display: inline-block;
     width: 50%;
-    padding: 5px 10px;
+    padding: 10px;
     border-top: 1px solid #eee;
     border-right: 1px solid #eee;
     overflow: hidden;
     background-color: #fff;
+    vertical-align: middle;
   }
 
   .classification-template-container .classification-name {
     color: #42bd56;
     float: left;
+    font-size: 14px;
   }
 
   .classification-template-container .classification-arrow {
