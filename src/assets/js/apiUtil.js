@@ -6,7 +6,8 @@ apiUtil.version = '1.0.0'
 apiUtil.urls = {
   movieShowing: _baseUrl + '/movie/showing',
   movieFree: _baseUrl + '/movie/free',
-  movieLatest: _baseUrl + '/movie/latest'
+  movieLatest: _baseUrl + '/movie/latest',
+  doulist: _baseUrl + 'doulist'
 }
 
 apiUtil.getURLParam = function (link, name) {

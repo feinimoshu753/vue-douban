@@ -2,7 +2,8 @@
   .movie-content {
     padding-bottom: 50px;
   }
-  .classification-title{
+
+  .classification-title {
     padding: 10px;
     background-color: #fff;
   }
@@ -21,6 +22,9 @@
                                   more-link="/music/list?type=latest"
                                   :datas="movieLatestData.subject_collection_items"></horizontal-scroll-template>
 
+      <h2 class="classification-title">发现好电影</h2>
+      <multi-horizontal-scroll-template :datas="movieSpecialClassificationData"></multi-horizontal-scroll-template>
+
       <h2 class="classification-title">分类浏览</h2>
       <classification-template :datas="movieClassificationData"></classification-template>
     </div>
@@ -32,6 +36,7 @@
 <script>
   import TabbarTemplate from './TabbarTemplate.vue'
   import HorizontalScrollTemplate from './HorizontalScrollTemplate.vue'
+  import MultiHorizontalScrollTemplate from './MultiHorizontalScrollTemplate.vue'
   import ClassificationTemplate from './ClassificationTemplate.vue'
   import apiUtil from '../assets/js/apiUtil'
 
@@ -59,6 +64,16 @@
           {name: '欧美', link: '/movie/list?type=western'},
           {name: '韩国', link: '/movie/list?type=korean'},
           {name: '日本', link: '/movie/list?type=japanese'}
+        ],
+        movieSpecialClassificationData: [
+          {name: '同时入选IMDB250和豆瓣电影250的电影', link: '/doulist?id=968362', color: '#3BA94D'},
+          {name: '带你进入不正常的世界', link: '/doulist?id=16002', color: '#4F9DED'},
+          {name: '用电【影】来祭奠逝去的岁月', link: '/doulist?id=190343', color: '#CC3344'},
+          {name: '女孩们的故事【电影】', link: '/doulist?id=1125971', color: '#FFAC2D'},
+          {name: '科幻是未来的钥匙——科幻启示录【科幻题材】', link: '/doulist?id=4253902', color: '#FFAC2D'},
+          {name: '美国生活面面观', link: '/doulist?id=121326', color: '#CC33444F9DED'},
+          {name: '2015终极期待', link: '/doulist?id=37479562', color: '#4F9DED'},
+          {name: '经典韩国电影——收集100部', link: '/doulist?id=458087', color: '#3BA94D'}
         ]
       }
     },
@@ -68,6 +83,7 @@
     components: {
       TabbarTemplate,
       HorizontalScrollTemplate,
+      MultiHorizontalScrollTemplate,
       ClassificationTemplate
     },
     methods: {
