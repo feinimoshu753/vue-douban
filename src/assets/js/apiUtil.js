@@ -7,6 +7,9 @@ apiUtil.urls = {
   movieShowing: _baseUrl + '/movie/showing',
   movieFree: _baseUrl + '/movie/free',
   movieLatest: _baseUrl + '/movie/latest',
+  bookFiction: _baseUrl + '/book/fiction',
+  bookNonfiction: _baseUrl + '/book/nonfiction',
+  bookMarketProduct: _baseUrl + '/book/market_product',
   doulist: _baseUrl + 'doulist'
 }
 

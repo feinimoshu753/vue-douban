@@ -90,7 +90,7 @@
       loadData: function () {
         this.loadMovieShowingData()
         this.loadMovieFreeData()
-        this.loadMovielatestData()
+        this.loadMovieLatestData()
       },
       loadMovieShowingData: function () {
         let context = this
@@ -108,7 +108,7 @@
           this.$vux.toast.show({text: '请检查网络'})
         })
       },
-      loadMovielatestData: function () {
+      loadMovieLatestData: function () {
         let context = this
         this.$http.get(apiUtil.urls.movieLatest).then(function (response) {
           context.movieLatestData = response.data
