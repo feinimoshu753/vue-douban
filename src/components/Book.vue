@@ -1,5 +1,5 @@
 <style>
-  .fiction-content {
+  .book-content {
     padding-bottom: 50px;
   }
 
@@ -11,7 +11,7 @@
 
 <template>
   <div>
-    <div class="fiction-content">
+    <div class="book-content">
       <horizontal-scroll-template :header-title="bookFictionData && bookFictionData.subject_collection.name"
                                   more-link="/book/list?type=fiction"
                                   :datas="bookFictionData.subject_collection_items"></horizontal-scroll-template>
@@ -47,18 +47,18 @@
         bookNonfictionData: '',
         bookMarketProductData: '',
         bookClassificationData: [
-          {name: '小说', link: '/movie/list?type=novel'},
-          {name: '爱情', link: '/movie/list?type=love'},
-          {name: '历史', link: '/movie/list?type=history'},
-          {name: '外国文学', link: '/movie/list?type=foreign'},
-          {name: '青春', link: '/movie/list?type=youth'},
-          {name: '励志', link: '/movie/list?type=motivation'},
-          {name: '随笔', link: '/movie/list?type=essay'},
-          {name: '传记', link: '/movie/list?type=bio'},
-          {name: '推理', link: '/movie/list?type=detective'},
-          {name: '旅行', link: '/movie/list?type=travel'},
-          {name: '奇幻', link: '/movie/list?type=fantasy'},
-          {name: '经管', link: '/movie/list?type=business'}
+          {name: '小说', link: '/book/list?type=novel'},
+          {name: '爱情', link: '/book/list?type=love'},
+          {name: '历史', link: '/book/list?type=history'},
+          {name: '外国文学', link: '/book/list?type=foreign'},
+          {name: '青春', link: '/book/list?type=youth'},
+          {name: '励志', link: '/book/list?type=motivation'},
+          {name: '随笔', link: '/book/list?type=essay'},
+          {name: '传记', link: '/book/list?type=bio'},
+          {name: '推理', link: '/book/list?type=detective'},
+          {name: '旅行', link: '/book/list?type=travel'},
+          {name: '奇幻', link: '/book/list?type=fantasy'},
+          {name: '经管', link: '/book/list?type=business'}
         ],
         bookSpecialClassificationData: [
           {name: '小波看书', link: '/doulist?id=10372', color: '#3BA94D'},

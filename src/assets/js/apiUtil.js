@@ -7,9 +7,19 @@ apiUtil.urls = {
   movieShowing: _baseUrl + '/movie/showing',
   movieFree: _baseUrl + '/movie/free',
   movieLatest: _baseUrl + '/movie/latest',
+  movieClassification: _baseUrl + '/movie/classification',
   bookFiction: _baseUrl + '/book/fiction',
   bookNonfiction: _baseUrl + '/book/nonfiction',
   bookMarketProduct: _baseUrl + '/book/market_product',
+  bookClassification: _baseUrl + '/book/classification',
+  tvDomestic: _baseUrl + '/tv/domestic',
+  tvVarietyShow: _baseUrl + '/tv/variety_show',
+  tvAmerican: _baseUrl + '/tv/american',
+  tvClassification: _baseUrl + '/tv/classification',
+  musicChinese: _baseUrl + '/music/chinaese',
+  musicOccident: _baseUrl + '/music/occident',
+  musicJapanKorea: _baseUrl + '/music/japan_korea',
+  musicClassification: _baseUrl + '/music/classification',
   doulist: _baseUrl + 'doulist'
 }
 

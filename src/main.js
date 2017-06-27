@@ -5,7 +5,7 @@ import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
 import Movie from './components/Movie'
-import Fiction from './components/Fiction'
+import Book from './components/Book'
 import Tv from './components/Tv'
 import Music from './components/Music'
 import { AjaxPlugin, ToastPlugin } from 'vux'
@@ -16,7 +16,7 @@ Vue.use(ToastPlugin)
 
 const routes = [
   {path: '/', component: Movie},
-  {path: '/fiction', component: Fiction},
+  {path: '/book', component: Book},
   {path: '/tv', component: Tv},
   {path: '/music', component: Music}
 ]
