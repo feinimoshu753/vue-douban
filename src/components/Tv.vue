@@ -16,7 +16,7 @@
                                   more-link="/tv/list?type=domestic"
                                   :datas="tvDomesticData.subject_collection_items"></horizontal-scroll-template>
       <horizontal-scroll-template :header-title="tvVarietyShowData && tvVarietyShowData.subject_collection.name"
-                                  more-link="/tv/list?type=varietyShow"
+                                  more-link="/tv/list?type=variety_show"
                                   :datas="tvVarietyShowData.subject_collection_items"></horizontal-scroll-template>
       <horizontal-scroll-template :header-title="tvAmericanData && tvAmericanData.subject_collection.name"
                                   more-link="/tv/list?type=american"

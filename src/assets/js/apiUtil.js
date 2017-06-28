@@ -16,7 +16,7 @@ apiUtil.urls = {
   tvVarietyShow: _baseUrl + '/tv/variety_show',
   tvAmerican: _baseUrl + '/tv/american',
   tvClassification: _baseUrl + '/tv/classification',
-  musicChinese: _baseUrl + '/music/chinaese',
+  musicChinese: _baseUrl + '/music/chinese',
   musicOccident: _baseUrl + '/music/occident',
   musicJapanKorea: _baseUrl + '/music/japan_korea',
   musicClassification: _baseUrl + '/music/classification',
