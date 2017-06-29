@@ -15,3 +15,7 @@ a{
 p{
   word-break: break-all;
 }
+
+img{
+  vertical-align: middle;
+}
