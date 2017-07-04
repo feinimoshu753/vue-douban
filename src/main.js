@@ -8,6 +8,7 @@ import Movie from './components/Movie'
 import Book from './components/Book'
 import Tv from './components/Tv'
 import Music from './components/Music'
+import Doulist from './components/Doulist'
 import { AjaxPlugin, ToastPlugin } from 'vux'
 
 Vue.use(VueRouter)
@@ -18,7 +19,8 @@ const routes = [
   {path: '/', component: Movie},
   {path: '/book', component: Book},
   {path: '/tv', component: Tv},
-  {path: '/music', component: Music}
+  {path: '/music', component: Music},
+  {path: '/doulist', component: Doulist}
 ]
 
 const router = new VueRouter({
