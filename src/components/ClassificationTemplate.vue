@@ -32,10 +32,10 @@
 
 <template>
   <div class="classification-template-container">
-    <a :href="item.link" class="classification-item" v-for="item in datas">
+    <router-link :to="item.link" class="classification-item" v-for="item in datas">
       <p class="classification-name">{{item.name}}</p>
       <span class="classification-arrow"></span>
-    </a>
+    </router-link>
   </div>
 </template>
 

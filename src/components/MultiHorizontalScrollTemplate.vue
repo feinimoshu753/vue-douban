@@ -27,9 +27,9 @@
 <template>
   <div class="multi-horizontal-scroll-template">
     <template v-for="(item,index) in datas">
-      <a class="scroll-item" :href="item.link" :key="item.id" :style="'color: ' + item.color + ';border-color: ' + item.color">
+      <router-link class="scroll-item" :to="item.link" :key="item.id" :style="'color: ' + item.color + ';border-color: ' + item.color">
         {{item.name}}
-      </a>
+      </router-link>
       <div class="switch-line" v-if="index % 4 === 3"></div>
     </template>
   </div>
